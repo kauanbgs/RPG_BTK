@@ -6,8 +6,9 @@ from areas.taverna import taverna
 from player.status import Char
 from player.inventario import inventory
 from resources.menu import menu
+from historia.inicio import paginaInicial
 
 def main():
-  menu()
+  paginaInicial()
   
 main()

@@ -3,6 +3,8 @@ from player.status import Char
 from player.status import status
 from assets.itens import Itens
 from areas.taverna import taverna
+from areas.areas import areas
+
 
 def menu():
   while True:
@@ -21,5 +23,5 @@ def menu():
       status()
     elif option == 3:
       taverna()
-    # elif option == 4:
-    # explorar()
+    elif option == 4:
+      areas()

@@ -1,12 +1,15 @@
+import time
+
 class Char:
   charName = "Aton"
   vida = 100
   ataque = 1.3
   defesa = 1.0
-  moedas = 50
+  moedas = 6
   option = 0
   deadEnemy = False
   deadPlayer = False
+  where = "Eldoria"
 
 def status():
     print(f"Nome: {Char.charName}")
@@ -14,3 +17,4 @@ def status():
     print(f"Ataque: {Char.ataque}")
     print(f"Defesa: {Char.defesa}")
     print(f"Moedas: {Char.moedas}")
+    time.sleep(2)

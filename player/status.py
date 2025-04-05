@@ -5,10 +5,11 @@ class Char:
   vida = 100
   ataque = 1.3
   defesa = 1.0
-  moedas = 6
+  moedas = 1
   option = 0
   deadEnemy = False
   deadPlayer = False
+  veioNoBosque = False
   where = "Eldoria"
 
 def status():

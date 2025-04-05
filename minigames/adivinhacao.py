@@ -48,6 +48,7 @@ def jogo_adivinhacao():
               print(f"Você acertou, e ganhou 10 moedas!")
               Char.moedas += 10
               words.remove(choice)
+              jogo_adivinhacao
             else:
               print(f"Você errou, e perdeu 1 moeda! Proxima dica: a ultima letra da palavra é: {choice[-1]}")
               counter += 1
@@ -57,6 +58,7 @@ def jogo_adivinhacao():
                 print(f"Você acertou, e ganhou 7 moedas!")
                 Char.moedas += 7
                 words.remove(choice)
+                jogo_adivinhacao()
               else:
                 print(f"Voce errou, e perdeu 1 moeda! Proxima dica: a palavra tem {choice.count('a')} letras 'a'")
                 counter += 1
@@ -66,6 +68,7 @@ def jogo_adivinhacao():
                   print(f"Você acertou, e ganhou 5 moedas!")
                   Char.moedas += 5
                   words.remove(choice)
+                  jogo_adivinhacao()
                 else:
                   print(f"Você errou, e perdeu 1 moeda! Proxima dica: a segunda letra da palavra é: {choice[1]}")
                   counter += 1
@@ -75,19 +78,21 @@ def jogo_adivinhacao():
                     print(f"Você acertou, e ganhou 3 moedas!")
                     Char.moedas += 3
                     words.remove(choice)
+                    jogo_adivinhacao()
                   else:
                     print(f"Você perdeu, e perdeu 2 moedas! a palavra era: {choice}")
                     Char.moedas -= 1
                     words.remove(choice)
                     if Char.moedas < 0:
                       Char.moedas = 0
+                    jogo_adivinhacao()
       else:
         print("Você não tem moedas suficientes para jogar.")
         return
     elif option == "n":
       print("Você decidiu não jogar.")
-      from areas.bosque_terrivel import bosqueTerrivel
-      bosqueTerrivel()
+      from areas.bosque_terrivel2 import bosqueTerrivel2
+      bosqueTerrivel2()
 
 
       

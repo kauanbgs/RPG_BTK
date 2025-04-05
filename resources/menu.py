@@ -1,3 +1,5 @@
+import os
+
 from player.inventario import inventory
 from player.status import Char
 from player.status import status
@@ -18,10 +20,14 @@ def menu():
       print("Opção inválida!")
       continue
     elif option == 1:
+      os.system('cls')
       inventory()
     elif option == 2:
+      os.system('cls')
       status()
     elif option == 3:
+      os.system('cls')
       taverna()
     elif option == 4:
+      os.system('cls')
       areas()

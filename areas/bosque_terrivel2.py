@@ -3,20 +3,11 @@ import os
 
 from player.status import Char
 from resources.menu import menu
-from areas.areas import areas
 
-
-def bosqueTerrivel():
-  Char.veioNoBosque = True
-  from areas.bosque_terrivel2 import bosqueTerrivel2
+def bosqueTerrivel2():
   from minigames.adivinhacao import jogo_adivinhacao
   from minigames.aposta_dados import apostaDados
-  print("Meu deus! Aton decidiu ir para o bosque terrível! Talvez essa não tenha sido a melhor das suas decisões...")
-  time.sleep(3)
-  print("O guerreiro sai em sua caminhada, após 3h de uma extensa caminhada, ele escuta um... latido?")
-  time.sleep(4)
-  print("CRISTO! O bosque terrivel é, na verdade, uma cidade linda com minijogos para ganhar dinheiro! Quem imaginaria?")
-  time.sleep(4)
+  from minigames.roleta import roleta
   Char.where = "Bosque Terrível"
   print(f"Você está em {Char.where}.")
   print("[0] - Voltar")
@@ -27,13 +18,14 @@ def bosqueTerrivel():
   if option == 0:
     print("Você decidiu voltar para a cidade!")
     time.sleep(2)
-    os.system('cls')
     Char.where = "Eldoria"
-    areas()
+    menu()
   elif option == 1:
     jogo_adivinhacao()
   elif option == 2:
     apostaDados()
+  elif option == 3:
+    roleta()
   else:
     print("Opção inválida! Tente novamente.")
     time.sleep(2)

@@ -7,8 +7,9 @@ from player.status import Char
 from player.inventario import inventory
 from resources.menu import menu
 from historia.inicio import paginaInicial
+from minigames.adivinhacao import jogo_adivinhacao
 
 def main():
-  paginaInicial()
+  menu()
   
 main()

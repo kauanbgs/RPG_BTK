@@ -55,8 +55,8 @@ def duelo(nomeInimigo, vidainimigo, ataqueInimigo):
       resultadoDado = d20()
       if resultadoDado >= 17:
         print("Você conseguiu fugir!")
-
         break
+      
       else:
         print("Você não conseguiu fugir!")
         resultadoDado = d20()

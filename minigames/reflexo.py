@@ -20,7 +20,14 @@ def jogoReflexo():
           end_time = time.time()
           reaction_time = end_time - start_time
           print(f"Seu tempo de reação foi de {reaction_time:.2f} segundos.")
-          if reaction_time < 0.20:
+
+          if reaction_time < 0.16:
+              print("TRAPACEIRO! perdeu 5 moedas!")
+              Char.moedas -= 5
+              time.sleep(2)
+              os.system('cls')
+              jogoReflexo()
+          elif reaction_time < 0.20:
               print("Você é muito rápido! ganhou 4 moedas!")
               Char.moedas += 4
               time.sleep(2)

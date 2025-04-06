@@ -39,6 +39,3 @@ def bosqueTerrivel2():
     time.sleep(2)
     os.system('cls')
     bosqueTerrivel2()
-
-
-  

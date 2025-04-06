@@ -50,9 +50,11 @@ def fazendaConfronto():
        print(f"Voce rolou: {resultadoDado}!")
        if resultadoDado >= 17:
           print("Aton consegue correr e sai ileso, voltando para o Centro da Cidade!")
+          time.sleep(3)
           areas()
        else:
           print("Você não conseguiu correr, e um duelo foi iniciado!")
+          time.sleep(4)
           duelo("Bandido", 60, 1.0)
           #continua se o jogador ficar vivo
           os.system('cls')

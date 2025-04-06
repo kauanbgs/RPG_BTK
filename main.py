@@ -12,6 +12,7 @@ from minigames.aposta_dados import apostaDados
 from minigames.roleta import roleta
 from minigames.anagrama import anagrama
 from minigames.reflexo import jogoReflexo
+from areas.ferreiro import ferreiro
 
 def main():
   menu()

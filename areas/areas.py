@@ -12,7 +12,12 @@ def areas():
   print("Você pode ir para:")
   print("[0] - Voltar ao menu")
   print("[1] - Bosque Terrível")
-  print("[2] - Fazenda Feliz")
+  if Char.veioFazenda == True:
+    print("[2] - Fazenda Feliz - FEITO")
+  else:
+    print("[2] - Fazenda Feliz")
+  print("[3] - Vila Winterfell")
+    
   option = input("Escolha uma opção: ")
 
   if not option.isdigit():
@@ -38,6 +43,12 @@ def areas():
       os.system('cls')
       bosqueTerrivel()
   elif option == 2:
-    Char.where = "Fazenda Feliz"
-    os.system('cls')
-    fazendaFeliz()
+    if Char.veioFazenda == True:
+      print("Você já fez essa side quest!")
+      time.sleep(2)
+      os.system('cls')
+      return areas()
+    else:
+      Char.where = "Fazenda Feliz"
+      os.system('cls')
+      fazendaFeliz()

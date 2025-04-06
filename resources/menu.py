@@ -7,6 +7,7 @@ from player.status import status
 from assets.itens import Itens
 from areas.taverna import taverna
 from areas.areas import areas
+from areas.ferreiro import ferreiro
 
 
 def menu():
@@ -17,6 +18,8 @@ def menu():
     print("[2] - Status")
     print("[3] - Taverna")
     print("[4] - Explorar")
+    if Char.veioFazenda == True:
+      print("[5] - Ferreiro")
     option = input("Escolha uma opção: ")
 
     if not option.isdigit():
@@ -27,7 +30,7 @@ def menu():
       option = int(option)
 
 
-    if option not in [1, 2, 3, 4]:
+    if option not in [1, 2, 3, 4, 5]:
       print("Opção inválida!")
       time.sleep(1)
       continue
@@ -55,3 +58,9 @@ def menu():
       time.sleep(1)
       os.system('cls')
       areas()
+    elif option == 5:
+      os.system('cls')
+      print("Procurando o ferreiro...")
+      time.sleep(1)
+      os.system('cls')
+      ferreiro()

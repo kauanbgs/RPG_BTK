@@ -5,7 +5,7 @@ class Char:
   vida = 100
   ataque = 1.3
   defesa = 1.0
-  moedas = 6
+  moedas = 50
   option = 0
   deadEnemy = False
   deadPlayer = False

@@ -13,13 +13,22 @@ def areas():
   print("[0] - Voltar ao menu")
   print("[1] - Bosque Terrível")
   print("[2] - Fazenda Feliz")
-  opcao = int(input("Escolha uma opção: "))
-  if opcao == 0:
+  option = input("Escolha uma opção: ")
+
+  if not option.isdigit():
+    os.system('cls')
+    print("Opção inválida!")
+    time.sleep(1)
+    areas()
+  else:
+    option = int(option)
+
+  if option == 0:
     os.system('cls')
     print("Voltando ao centro da cidade...")
     time.sleep(1)
     menu()
-  elif opcao == 1:
+  elif option == 1:
     if Char.veioNoBosque == True:
       Char.where = "Bosque Terrível"
       os.system('cls')
@@ -28,7 +37,7 @@ def areas():
       Char.where = "Bosque Terrível"
       os.system('cls')
       bosqueTerrivel()
-  elif opcao == 2:
+  elif option == 2:
     Char.where = "Fazenda Feliz"
     os.system('cls')
     fazendaFeliz()

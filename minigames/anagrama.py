@@ -74,8 +74,8 @@ def anagrama():
                 print(f"Você acertou! A palavra era '{palavra_escolhida}' e você ganhou 2 moedas.")
                 Char.moedas += 2
             else:
-                print(f"Você errou! A palavra era '{palavra_escolhida}' e você perdeu 2 moedas.")
-                Char.moedas -= 2
+                print(f"Você errou! A palavra era '{palavra_escolhida}' e você perdeu 4 moedas.")
+                Char.moedas -= 4
                 if Char.moedas < 0:
                     Char.moedas = 0
 

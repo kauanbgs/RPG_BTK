@@ -17,9 +17,19 @@ def menu():
     print("[2] - Status")
     print("[3] - Taverna")
     print("[4] - Explorar")
-    option = int(input("Escolha uma opção: "))
+    option = input("Escolha uma opção: ")
+
+    if not option.isdigit():
+        print("Opção inválida!")
+        time.sleep(1)
+        continue
+    else:
+      option = int(option)
+
+
     if option not in [1, 2, 3, 4]:
       print("Opção inválida!")
+      time.sleep(1)
       continue
     elif option == 1:
       os.system('cls')

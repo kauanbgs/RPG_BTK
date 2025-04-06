@@ -13,8 +13,8 @@ def roleta():
   print("Insira [1] para jogar!")
   option = int(input("Escolha uma opção: "))
   if option == 0:
-    from areas.bosque_terrivel import bosqueTerrivel
-    bosqueTerrivel()
+    from areas.bosque_terrivel2 import bosqueTerrivel2
+    bosqueTerrivel2()
   elif option == 1:
 
     if Char.moedas < 2:

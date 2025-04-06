@@ -10,7 +10,8 @@ from areas.areas import areas
 
 def menu():
   while True:
-    print("------------------Menu-----------------")
+    os.system('cls')
+    print("------------------Eldoria-----------------")
     print("[1] - Inventário")
     print("[2] - Status")
     print("[3] - Taverna")

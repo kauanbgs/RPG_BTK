@@ -10,7 +10,9 @@ from historia.inicio import paginaInicial
 from minigames.adivinhacao import jogo_adivinhacao
 from minigames.aposta_dados import apostaDados
 from minigames.roleta import roleta
+from minigames.anagrama import anagrama
 
 def main():
-  menu()
+  anagrama()
+  
 main()

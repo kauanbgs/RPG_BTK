@@ -8,12 +8,14 @@ def bosqueTerrivel2():
   from minigames.adivinhacao import jogo_adivinhacao
   from minigames.aposta_dados import apostaDados
   from minigames.roleta import roleta
+  from minigames.anagrama import anagrama
   Char.where = "Bosque Terrível"
   print(f"Você está em {Char.where}.")
   print("[0] - Voltar")
   print("[1] - Jogo da Adivinhação")
   print("[2] - Aposta de Dados")
   print("[3] - Roleta")
+  print("[4] - Anagrama")
   option = int(input("Escolha uma opção: "))
   if option == 0:
     print("Você decidiu voltar para a cidade!")
@@ -26,6 +28,8 @@ def bosqueTerrivel2():
     apostaDados()
   elif option == 3:
     roleta()
+  elif option == 4:
+    anagrama()
   else:
     print("Opção inválida! Tente novamente.")
     time.sleep(2)

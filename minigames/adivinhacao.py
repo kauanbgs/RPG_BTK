@@ -39,6 +39,7 @@ def jogo_adivinhacao():
             print(f"VOCE ACERTOU DE PRIMEIRA!, e ganhou 30 moedas!")
             Char.moedas += 30
             words.remove(choice)
+            jogo_adivinhacao()
         else:
             print(f"Você errou, e perdeu 1 moeda! Proxima dica: a primeira letra da palavra é: {choice[0]}")
             counter += 1

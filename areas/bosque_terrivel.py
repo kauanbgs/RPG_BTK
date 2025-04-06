@@ -13,6 +13,7 @@ def bosqueTerrivel():
   from minigames.aposta_dados import apostaDados
   from minigames.roleta import roleta
   from minigames.anagrama import anagrama
+  from minigames.reflexo import jogoReflexo
   print("Meu deus! Aton decidiu ir para o bosque terrível! Talvez essa não tenha sido a melhor das suas decisões...")
   time.sleep(3)
   print("O guerreiro sai em sua caminhada, após 3h de uma extensa caminhada, ele escuta um... latido?")
@@ -26,6 +27,7 @@ def bosqueTerrivel():
   print("[2] - Aposta de Dados")
   print("[3] - Roleta")
   print("[4] - Anagrama")
+  print("[5] - Jogo do Reflexo")
   option = int(input("Escolha uma opção: "))
   if option == 0:
     print("Você decidiu voltar para a cidade!")
@@ -41,6 +43,8 @@ def bosqueTerrivel():
     roleta()
   elif option == 4:
     anagrama()
+  elif option == 5:
+    jogoReflexo()
   else:
     print("Opção inválida! Tente novamente.")
     time.sleep(2)

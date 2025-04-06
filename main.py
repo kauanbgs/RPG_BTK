@@ -11,8 +11,9 @@ from minigames.adivinhacao import jogo_adivinhacao
 from minigames.aposta_dados import apostaDados
 from minigames.roleta import roleta
 from minigames.anagrama import anagrama
+from minigames.reflexo import jogoReflexo
 
 def main():
-  anagrama()
-  
+  jogoReflexo()
+
 main()

@@ -1,4 +1,5 @@
 import os
+import time
 
 from player.inventario import inventory
 from player.status import Char
@@ -22,13 +23,25 @@ def menu():
       continue
     elif option == 1:
       os.system('cls')
+      print("Abrindo a mochila...")
+      time.sleep(1)
+      os.system('cls')
       inventory()
     elif option == 2:
+      os.system('cls')
+      print("Procurando informações...")
+      time.sleep(1)
       os.system('cls')
       status()
     elif option == 3:
       os.system('cls')
+      print("Entrando na Taverna...")
+      time.sleep(1)
+      os.system('cls')
       taverna()
     elif option == 4:
+      os.system('cls')
+      print("Procurando areas...")
+      time.sleep(1)
       os.system('cls')
       areas()

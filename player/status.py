@@ -18,4 +18,4 @@ def status():
     print(f"Ataque: {Char.ataque}")
     print(f"Defesa: {Char.defesa}")
     print(f"Moedas: {Char.moedas}")
-    time.sleep(2)
+    time.sleep(3)

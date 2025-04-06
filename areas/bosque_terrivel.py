@@ -7,6 +7,7 @@ from areas.areas import areas
 
 
 def bosqueTerrivel():
+  os.system('cls')
   Char.veioNoBosque = True
   from areas.bosque_terrivel2 import bosqueTerrivel2
   from minigames.adivinhacao import jogo_adivinhacao
@@ -20,6 +21,8 @@ def bosqueTerrivel():
   time.sleep(4)
   print("CRISTO! O bosque terrivel é, na verdade, uma cidade linda com minijogos para ganhar dinheiro! Quem imaginaria?")
   time.sleep(4)
+  os.system('cls')
+  print("")
   Char.where = "Bosque Terrível"
   print(f"Você está em {Char.where}.")
   print("[0] - Voltar")

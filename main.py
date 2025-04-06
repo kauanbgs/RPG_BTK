@@ -14,6 +14,6 @@ from minigames.anagrama import anagrama
 from minigames.reflexo import jogoReflexo
 
 def main():
-  jogoReflexo()
+  menu()
 
 main()

@@ -1,5 +1,7 @@
 from player.status import Char
 from assets.itens import Itens
+import time
+import os
 
 
 
@@ -25,6 +27,9 @@ def inventory():
       print(f"[3] - {itensPossuidos[2]}")
   itemUsar = int(input("Escolha um item para usar: "))
   if itemUsar == 0:
+      os.system('cls')
+      print("Fechando a mochila...")
+      time.sleep(1)
       menu()
   elif itemUsar == 1:
       if itensPossuidos[0] == "":

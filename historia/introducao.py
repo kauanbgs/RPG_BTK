@@ -1,7 +1,10 @@
 import time
 from resources.menu import menu
+from assets import game_state
+
 
 def introducao():
+  game_state.tempoComeco = time.time()
 
   print("E aqui começa sua história...")
   time.sleep(2)
@@ -18,7 +21,7 @@ def introducao():
   print("Voce caminha pelas ruas, observando o vilarejo ao seu redor. Nada fora do comum. Nada que indique que algo grande está prestes a acontecer.")
   time.sleep(4)
   print("Mas talvez, isso dependa de você.")
-  time.sleep(2)
+  time.sleep(3)
   menu()
 
   

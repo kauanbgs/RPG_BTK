@@ -10,6 +10,7 @@ class Char:
   deadEnemy = False
   deadPlayer = False
   veioNoBosque = False
+  veioFazenda = False
   where = "Eldoria"
 
 def status():

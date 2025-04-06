@@ -1,0 +1,1 @@
+tempoComeco = 0

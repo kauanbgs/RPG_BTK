@@ -14,7 +14,15 @@ class Char:
   veioNoBosque = False
   veioFazenda = False
   foiFerreiro = False
+  veioWinterfell = False
   where = "Eldoria"
+  feito_mercador = False
+  feito_castelo = False
+  treinou_soldados = False
+  pistas_moradores = False
+  conversou_moradores = False
+  fezWinterfell = False
+  pistas = ["NADA", "NADA", "NADA"]
 
   def atualizar_ataque():
     base = Char.ataque

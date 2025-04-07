@@ -22,7 +22,6 @@ def bosqueTerrivel():
   print("CRISTO! O bosque terrivel é, na verdade, uma cidade linda com minijogos para ganhar dinheiro! Quem imaginaria?")
   time.sleep(4)
   os.system('cls')
-  print("")
   Char.where = "Bosque Terrível"
   print(f"Você está em {Char.where}, e tem {Char.moedas} Moedas!")
   print("[0] - Voltar")

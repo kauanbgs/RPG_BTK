@@ -13,6 +13,9 @@ from minigames.roleta import roleta
 from minigames.anagrama import anagrama
 from minigames.reflexo import jogoReflexo
 from areas.ferreiro import ferreiro
+from areas.areas import areas
+from areas.winterfell import winterfell
+from historia.histWinterfell import tribunal
 
 def main():
   paginaInicial()

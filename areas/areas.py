@@ -6,7 +6,9 @@ def areas():
   from areas.bosque_terrivel import bosqueTerrivel
   from areas.bosque_terrivel2 import bosqueTerrivel2
   from areas.fazenda_feliz import fazendaFeliz
+  from areas.winterfell import winterfell
   from resources.menu import menu
+  os.system('cls')
   Char.where = "Centro da Cidade"
   print(f"Você está atualmente no: {Char.where}")
   print("Você pode ir para:")
@@ -16,7 +18,12 @@ def areas():
     print("[2] - Fazenda Feliz - FEITO")
   else:
     print("[2] - Fazenda Feliz")
-  # print("[3] - Vila Winterfell")
+  if Char.veioFazenda == True and Char.veioWinterfell == False:
+    print("[3] - Vila Winterfell - DESBLOQUEADO")
+  elif Char.veioWinterfell == True:
+    print("[3] - Vila Winterfell - FEITO")
+
+  
     
   option = input("Escolha uma opção: ")
 
@@ -52,3 +59,11 @@ def areas():
       Char.where = "Fazenda Feliz"
       os.system('cls')
       fazendaFeliz()
+  elif option == 3:
+    if Char.veioWinterfell == True:
+      print("Você já fez essa quest!")
+      areas()
+    else:
+      Char.where = "Winterfell"
+      os.system('cls')
+      winterfell()

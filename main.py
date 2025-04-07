@@ -15,6 +15,6 @@ from minigames.reflexo import jogoReflexo
 from areas.ferreiro import ferreiro
 
 def main():
-  menu()
+  paginaInicial()
 
 main()

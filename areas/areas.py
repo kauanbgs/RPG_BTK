@@ -16,7 +16,7 @@ def areas():
     print("[2] - Fazenda Feliz - FEITO")
   else:
     print("[2] - Fazenda Feliz")
-  print("[3] - Vila Winterfell")
+  # print("[3] - Vila Winterfell")
     
   option = input("Escolha uma opção: ")
 

@@ -6,16 +6,18 @@ class Char:
   ataque = 1.3
   arma = ""
   defesa = 1.0
-  moedas = 50
+  moedas = 6
+  honra = 0
   option = 0
   deadEnemy = False
   deadPlayer = False
   veioNoBosque = False
   veioFazenda = False
+  foiFerreiro = False
   where = "Eldoria"
 
   def atualizar_ataque():
-    base = 1.3
+    base = Char.ataque
     if Char.arma == "Espada de Madeira":
       Char.ataque = base + 0.5
     elif Char.arma == "Espada de Prata":

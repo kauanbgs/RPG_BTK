@@ -11,9 +11,8 @@ def gameOver():
     minutos = int(tempoTotal // 60)
     segundos = int(tempoTotal % 60)
 
-    print(f" Tempo de jogo: {minutos} minuto(s) e {segundos} segundo(s)")
+    print(f" Tempo de jogo: {minutos:.2f} minuto(s) e {segundos} segundo(s)")
     print(f"Personagem: {Char.charName}")
-    print(f"Vida Final: {Char.vida:.2f}")
     print(f"Ataque Final: {Char.ataque:.2f}")
     print(f"Defesa Final: {Char.defesa:.2f}")
     print(f"Ouro Acumulado: {Char.moedas}")

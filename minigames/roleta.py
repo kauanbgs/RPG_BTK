@@ -17,7 +17,7 @@ def roleta():
     bosqueTerrivel2()
   elif option == 1:
 
-    if Char.moedas < 2:
+    if Char.moedas <= 2:
       print("Você não tem moedas suficientes para jogar.")
       time.sleep(2)
       os.system('cls')

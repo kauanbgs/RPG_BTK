@@ -11,13 +11,13 @@ def bosqueTerrivel2():
   from minigames.anagrama import anagrama
   from minigames.reflexo import jogoReflexo
   Char.where = "Bosque Terrível"
-  print(f"Você está em {Char.where}.")
+  print(f"Você está em {Char.where}, e tem {Char.moedas} Moedas!")
   print("[0] - Voltar")
-  print("[1] - Jogo da Adivinhação")
-  print("[2] - Aposta de Dados")
-  print("[3] - Roleta")
-  print("[4] - Anagrama")
-  print("[5] - Jogo do Reflexo")
+  print("[1] - Jogo da Adivinhação - Min 5 Moedas")
+  print("[2] - Aposta de Dados - Min 1 Moeda")
+  print("[3] - Roleta - Min 2 Moedas")
+  print("[4] - Anagrama - Min 3 Moedas")
+  print("[5] - Jogo do Reflexo - Min 5 Moedas")
   option = int(input("Escolha uma opção: "))
   if option == 0:
     print("Você decidiu voltar para a cidade!")

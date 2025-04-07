@@ -19,7 +19,10 @@ def menu():
     print("[3] - Taverna")
     print("[4] - Explorar")
     if Char.veioFazenda == True:
-      print("[5] - Ferreiro")
+      if Char.foiFerreiro == False:
+        print("[5] - Ferreiro - DESBLOQUEADO")
+      else:
+        print("[5] - Ferreiro")
     option = input("Escolha uma opção: ")
 
     if not option.isdigit():

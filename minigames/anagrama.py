@@ -59,7 +59,7 @@ def anagrama():
             return
 
         elif option == "s":
-            if Char.moedas < 2:
+            if Char.moedas <= 3:
                 print("Você não tem moedas suficientes para jogar.")
                 time.sleep(2)
                 continue  # volta pro menu do jogo
@@ -74,8 +74,8 @@ def anagrama():
                 print(f"Você acertou! A palavra era '{palavra_escolhida}' e você ganhou 2 moedas.")
                 Char.moedas += 2
             else:
-                print(f"Você errou! A palavra era '{palavra_escolhida}' e você perdeu 4 moedas.")
-                Char.moedas -= 4
+                print(f"Você errou! A palavra era '{palavra_escolhida}' e você perdeu 3 moedas.")
+                Char.moedas -= 3
                 if Char.moedas < 0:
                     Char.moedas = 0
 

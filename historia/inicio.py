@@ -2,6 +2,8 @@ from player.status import Char
 from historia.introducao import introducao
 from toknow.manual import manual
 from toknow.wiki import wiki
+from assets.game_state import comecarTimer
+from resources.duelo import duelo
 
 def paginaInicial():
   while True:
@@ -13,6 +15,7 @@ def paginaInicial():
       print("Opção inválida!")
       continue
     elif option == 1:
+      comecarTimer()
       introducao()
     elif option == 2:
       manual()

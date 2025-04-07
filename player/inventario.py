@@ -53,14 +53,14 @@ def inventory():
                 itensPossuidos[0] = ""
                 inventory()
             elif itensPossuidos[0] == "Poção de Ataque":
-                Char.ataque += 0.1        
+                Char.ataque += 0.2       
                 os.system('cls')
                 print("Você usou uma poção de Ataque!")
                 time.sleep(1)
                 itensPossuidos[0] = ""
                 inventory()
             elif itensPossuidos[0] == "Poção de Defesa":
-                Char.defesa += 0.1
+                Char.defesa += 0.2
                 os.system('cls')
                 print("Você usou uma poção de Defesa!")
                 time.sleep(1)
@@ -81,14 +81,14 @@ def inventory():
                 itensPossuidos[1] = ""
                 inventory()
             elif itensPossuidos[1] == "Poção de Ataque":
-                Char.ataque += 0.1
+                Char.ataque += 0.2
                 os.system('cls')
                 print("Você usou uma poção de Ataque!")
                 time.sleep(1)
                 itensPossuidos[1] = ""
                 inventory()
             elif itensPossuidos[1] == "Poção de Defesa":
-                Char.defesa += 0.1
+                Char.defesa += 0.2
                 os.system('cls')
                 print("Você usou uma poção de Defesa!")
                 time.sleep(1)
@@ -109,14 +109,14 @@ def inventory():
                 itensPossuidos[2] = ""
                 inventory()
             elif itensPossuidos[2] == "Poção de Ataque":
-                Char.ataque += 0.1
+                Char.ataque += 0.2
                 os.system('cls')
                 print("Você usou uma poção de Ataque!")
                 time.sleep(1)
                 itensPossuidos[2] = ""
                 inventory()
             elif itensPossuidos[2] == "Poção de Defesa":
-                Char.defesa += 0.1
+                Char.defesa += 0.2
                 os.system('cls')
                 print("Você usou uma poção de Defesa!")
                 time.sleep(1)

@@ -6,11 +6,11 @@ from player.status import Char
 
 def jogoReflexo():
     print("Bem-vindo ao jogo do reflexo! para ganhar, você terá que apertar o botão [ENTER] o mais rápido possível!")
-    print(f"Você tem {Char.moedas} moedas.")
+    print(f"Você tem {Char.moedas} moedas, O necessário para jogar são 5.")
     print("Quer jogar? s/n")
     option = input("Escolha uma opção: ").lower()
     if option == "s":
-      if Char.moedas > 3:
+      if Char.moedas >= 5:
           print("Se prepare!")
           time.sleep(random.randint(2, 7))
           os.system('cls')

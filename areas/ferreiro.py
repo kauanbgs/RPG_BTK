@@ -6,6 +6,7 @@ import os
 
 
 def ferreiro():
+  Char.foiFerreiro = True
   Char.where = "Ferreiro"
   from player.inventario import inventory
   from assets.data import itensPossuidos

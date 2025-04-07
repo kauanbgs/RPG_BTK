@@ -1,4 +1,6 @@
 from player.status import Char
+import time
+import os
 
 def jogo_adivinhacao():
     import random
@@ -31,7 +33,7 @@ def jogo_adivinhacao():
     print("Quer jogar? s/n")
     option = input("Escolha uma opção: ").lower()
     if option == "s":
-      if Char.moedas > 5:
+      if Char.moedas >= 5:
         choice = random.choice(words)
         print(f'Dica inicial: a palavra tem {len(choice)} letras.')
         escolha = input("Chute: ").lower()
@@ -89,9 +91,11 @@ def jogo_adivinhacao():
                     jogo_adivinhacao()
       else:
         print("Você não tem moedas suficientes para jogar.")
+        time.sleep(3)
         return
     elif option == "n":
       print("Você decidiu não jogar.")
+      time.sleep(2)
       from areas.bosque_terrivel2 import bosqueTerrivel2
       bosqueTerrivel2()
 

@@ -15,6 +15,7 @@ class Char:
   veioFazenda = False
   foiFerreiro = False
   veioWinterfell = False
+  veioVardann = False
   where = "Eldoria"
   feito_mercador = False
   feito_castelo = False

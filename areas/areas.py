@@ -54,16 +54,28 @@ def areas():
       print("Você já fez essa side quest!")
       time.sleep(2)
       os.system('cls')
-      return areas()
+      areas()
     else:
       Char.where = "Fazenda Feliz"
       os.system('cls')
       fazendaFeliz()
   elif option == 3:
+    if Char.veioFazenda == False:
+      os.system('cls')
+      print("Você não desbloqueou essa ilha!")
+      time.sleep(1)
+      areas()
     if Char.veioWinterfell == True:
+      os.system('cls')
       print("Você já fez essa quest!")
+      time.sleep(1)
       areas()
     else:
       Char.where = "Winterfell"
       os.system('cls')
       winterfell()
+  else:
+    os.system('cls')
+    print("Opção não existente.")
+    time.sleep(1)
+    areas()

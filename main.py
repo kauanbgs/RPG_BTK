@@ -18,6 +18,6 @@ from areas.winterfell import winterfell
 from historia.histWinterfell import tribunal
 
 def main():
-  paginaInicial()
+  areas()
 
 main()

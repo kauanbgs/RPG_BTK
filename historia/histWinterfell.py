@@ -186,8 +186,4 @@ def tribunal():
     print("O Lorde, para testar seu conhecimento, pergunta: O que ocorreu em Winterfell?")
     time.sleep(2)
     quizTribunal()
-
-    # print("Fim do julgamento, voltando a Eldoria.")
-    # time.sleep(2)
-    # areas()
     

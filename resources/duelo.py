@@ -23,8 +23,14 @@ def duelo(nomeInimigo, vidainimigo, ataqueInimigo):
       print("Opção inválida!")
       time.sleep(1)
       continue
-    else:
-      option = int(option)
+
+    option = int(option)
+
+    if option not in [1, 2, 3]:
+      os.system('cls')
+      print("Opção inválida! Escolha entre 1, 2 ou 3.")
+      time.sleep(1)
+      continue
 
     if option == 1:
       resultadoDado = d20()

@@ -17,6 +17,8 @@ class Char:
   veioWinterfell = False
   veioVardann = False
   where = "Eldoria"
+
+  #WINTERFELL
   feito_mercador = False
   feito_castelo = False
   treinou_soldados = False
@@ -24,6 +26,9 @@ class Char:
   conversou_moradores = False
   fezWinterfell = False
   pistas = ["NADA", "NADA", "NADA"]
+
+  #VARDANN
+  
 
   def atualizar_ataque():
     base = Char.ataque

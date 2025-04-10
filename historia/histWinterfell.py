@@ -43,7 +43,6 @@ def investigar_castelo():
     time.sleep(4)
     print("'Vigie os corredores durante a madrugada. Quero saber se algum de meus próprios homens está envolvido no crime.'")
     time.sleep(4)
-
     print("Você aceita a tarefa e passa a noite em silêncio pelos corredores gelados do castelo...")
     time.sleep(4)
     print("Quase ao amanhecer, escuta passos leves e vê uma sombra fugir pelas escadas.")

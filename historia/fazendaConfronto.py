@@ -84,7 +84,7 @@ def subOptions():
     from assets.data import itensPossuidos
     from areas.areas import areas
     from resources.duelo import duelo
-    print("\n[1] - Agradecer o bandido e ir embora.")
+    print("[1] - Agradecer o bandido e ir embora.")
     print("[2] - Duelar contra o bandido em busca de ouro.")
     sub_option = input("Digite sua escolha: ")
 

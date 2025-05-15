@@ -1,6 +1,9 @@
 import time
 import os
 
+from assets.data import printDigitado
+from assets.config import config
+
 def fazendaFeliz():
     from historia.fazendaConfronto import fazendaConfronto
     from player.status import Char
@@ -8,9 +11,9 @@ def fazendaFeliz():
     from areas.bosque_terrivel import bosqueTerrivel
 
     Char.veioFazenda = True
-    print("Aton vê uma placa de sinalização, nela contém que a fazenda feliz está a 500 metros a direita. O guerreiro então, segue o caminho.")
+    printDigitado("Aton vê uma placa de sinalização, nela contém que a fazenda feliz está a 500 metros a direita. O guerreiro então, segue o caminho.\n", config.tempo)
     time.sleep(4)
-    print("Após 3 minutos de caminhada, um arbusto emite um barulho estrondoso...")
+    printDigitado("Após 3 minutos de caminhada, um arbusto emite um barulho estrondoso...\n", config.tempo)
     time.sleep(3)
-    print("UM LADRÃO! o bandido sai do arbusto e te aborda! o que fazer?")
+    printDigitado("UM LADRÃO! o bandido sai do arbusto e te aborda! o que fazer?\n", config.tempo)
     fazendaConfronto()

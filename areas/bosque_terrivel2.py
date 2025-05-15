@@ -10,8 +10,10 @@ def bosqueTerrivel2():
   from minigames.roleta import roleta
   from minigames.anagrama import anagrama
   from minigames.reflexo import jogoReflexo
+  from assets.data import printDigitado
+  from assets.config import config
   Char.where = "Bosque Terrível"
-  print(f"Você está em {Char.where}, e tem {Char.moedas} Moedas!")
+  printDigitado(f"Você está em {Char.where}, e tem {Char.moedas} Moedas!\n", config.tempo)
   print("[0] - Voltar")
   print("[1] - Jogo da Adivinhação - Min 5 Moedas")
   print("[2] - Aposta de Dados - Min 1 Moeda")
@@ -20,7 +22,7 @@ def bosqueTerrivel2():
   print("[5] - Jogo do Reflexo - Min 5 Moedas")
   option = int(input("Escolha uma opção: "))
   if option == 0:
-    print("Você decidiu voltar para a cidade!")
+    printDigitado("Você decidiu voltar para a cidade!\n", config.tempo)
     time.sleep(2)
     Char.where = "Eldoria"
     menu()

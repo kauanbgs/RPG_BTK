@@ -29,7 +29,7 @@ def roleta():
 
     resultadoDado = d20()
 
-    numeros = [randint(1, 9), randint(1, 9), randint(1, 9)]
+    numeros = [randint(1, 6), randint(1, 6), randint(1, 6)]
 
     if numeros[0] == numeros[1] and numeros[1] == numeros[2]:
       print(f"{numeros[0]} - {numeros[1]} - {numeros[2]}")

@@ -8,23 +8,25 @@ def winterfell():
   from areas.areas import areas
   from player.status import Char
   from resources.menu import menu
+  from assets.data import printDigitado
+  from assets.config import config
   from historia.histWinterfell import investigar_mercador
   from historia.histWinterfell import investigar_castelo
   from historia.histWinterfell import treinar_com_soldados
   from historia.histWinterfell import conversar_com_moradores
   from historia.histWinterfell import tribunal
   Char.veioWinterfell = True
-  print("Depois de dias de viagem e noites frias, Aton finalmente avista os portões de Winterfell ao longe.")
+  printDigitado("Depois de dias de viagem e noites frias, Aton finalmente avista os portões de Winterfell ao longe.\n", config.tempo)
   time.sleep(5)
-  print("Uma névoa espessa cobre as muralhas de pedra, e corvos sobrevoam o céu cinzento.")
+  printDigitado("Uma névoa espessa cobre as muralhas de pedra, e corvos sobrevoam o céu cinzento.\n", config.tempo)
   time.sleep(5)
-  print("Ao se aproximar, dois soldados o barram. 'Identifique-se!', diz um deles, com a mão na empunhadura da espada.")
+  printDigitado("Ao se aproximar, dois soldados o barram. 'Identifique-se!', diz um deles, com a mão na empunhadura da espada.\n", config.tempo)
   time.sleep(5)
-  print("Aton se apresenta com firmeza. Os soldados se entreolham e liberam a passagem.")
+  printDigitado("Aton se apresenta com firmeza. Os soldados se entreolham e liberam a passagem.\n", config.tempo)
   time.sleep(5)
-  print("Assim que atravessa os portões, Aton sente o clima pesado. Olhares desconfiados, sussurros em cada canto.")
+  printDigitado("Assim que atravessa os portões, Aton sente o clima pesado. Olhares desconfiados, sussurros em cada canto.\n", config.tempo)
   time.sleep(5)
-  print("Algo está errado em Winterfell...")
+  printDigitado("Algo está errado em Winterfell...\n", config.tempo)
   time.sleep(5)
   os.system('cls')
   print("---Centro de Winterfell---")

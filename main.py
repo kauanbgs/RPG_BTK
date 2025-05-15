@@ -17,8 +17,9 @@ from areas.areas import areas
 from areas.winterfell import winterfell
 from historia.histWinterfell import tribunal
 from areas.postoVardann import postoVardann
+from assets.data import printDigitado
 
 def main():
-  paginaInicial()
+  menu()
 
 main()

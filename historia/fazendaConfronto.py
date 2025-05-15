@@ -5,6 +5,8 @@ def fazendaConfronto():
     from resources.d20 import d20
     from player.inventario import inventory
     from player.status import Char
+    from assets.data import printDigitado
+    from assets.config import config
     from assets.itens import Itens
     from assets.data import itensPossuidos
     from areas.areas import areas
@@ -25,9 +27,9 @@ def fazendaConfronto():
     
     if option == 1:
        os.system('cls')
-       print("Aton conversou com o bandido e descobriu que ele também é de Eldoria.")
+       printDigitado("Aton conversou com o bandido e descobriu que ele também é de Eldoria.", config.tempo)
        time.sleep(2)
-       print("Após minutos de conversa sobre o euller (ou adriano) nem chegarem a ler esse dialogo, o ladrão te recompensa com uma poção de ataque!")
+       printDigitado("Após minutos de conversa sobre o euller (ou adriano) nem chegarem a ler esse dialogo, o ladrão te recompensa com uma poção de ataque!", config.tempo)
        
        if itensPossuidos[0] == "":
         itensPossuidos[0] = Itens.venda[1]
@@ -49,11 +51,11 @@ def fazendaConfronto():
        resultadoDado = d20()
        print(f"Voce rolou: {resultadoDado}!")
        if resultadoDado >= 17:
-          print("Aton consegue correr e sai ileso, voltando para o Centro da Cidade!")
+          printDigitado("Aton consegue correr e sai ileso, voltando para o Centro da Cidade!", config.tempo)
           time.sleep(3)
           areas()
        else:
-          print("Você não conseguiu correr, e um duelo foi iniciado!")
+          printDigitado("Você não conseguiu correr, e um duelo foi iniciado!", config.tempo)
           time.sleep(4)
           duelo("Bandido", 60, 1.0)
           #continua se o jogador ficar vivo
@@ -65,7 +67,7 @@ def fazendaConfronto():
           areas()
     elif option == 3:
        os.system('cls')
-       print("Você decidiu duelar!")
+       printDigitado("Você decidiu duelar!", config.tempo)
        print("Preparando espadas...")
        time.sleep(2)
        os.system('cls')

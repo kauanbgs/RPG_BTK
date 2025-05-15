@@ -12,6 +12,7 @@ def ferreiro():
   from assets.data import itensPossuidos
   from resources.menu import menu
   from resources.venderArma import venderArma
+  
 
   print("Bem vindo ao ferreiro!")
   os.system('cls')

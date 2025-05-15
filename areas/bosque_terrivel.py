@@ -4,6 +4,8 @@ import os
 from player.status import Char
 from resources.menu import menu
 from areas.areas import areas
+from assets.data import printDigitado
+from assets.config import config
 
 
 def bosqueTerrivel():
@@ -15,11 +17,11 @@ def bosqueTerrivel():
   from minigames.roleta import roleta
   from minigames.anagrama import anagrama
   from minigames.reflexo import jogoReflexo
-  print("Meu deus! Aton decidiu ir para o bosque terrível! Talvez essa não tenha sido a melhor das suas decisões...")
+  printDigitado("Meu deus! Aton decidiu ir para o bosque terrível! Talvez essa não tenha sido a melhor das suas decisões...\n", config.tempo)
   time.sleep(3)
-  print("O guerreiro sai em sua caminhada, após 3h andando, ele escuta um... latido?")
+  printDigitado("O guerreiro sai em sua caminhada, após 3h andando, ele escuta um... latido?\n", config.tempo)
   time.sleep(4)
-  print("CRISTO! O bosque terrivel é, na verdade, uma cidade linda com minijogos para ganhar dinheiro! Quem imaginaria?")
+  printDigitado("CRISTO! O bosque terrivel é, na verdade, uma cidade linda com minijogos para ganhar dinheiro! Quem imaginaria?\n", config.tempo)
   time.sleep(4)
   os.system('cls')
   Char.where = "Bosque Terrível"
@@ -32,7 +34,7 @@ def bosqueTerrivel():
   print("[5] - Jogo do Reflexo - Min 5 Moedas")
   option = int(input("Escolha uma opção: "))
   if option == 0:
-    print("Você decidiu voltar para a cidade!")
+    printDigitado("Você decidiu voltar para a cidade!\n", config.tempo)
     time.sleep(2)
     os.system('cls')
     Char.where = "Eldoria"

@@ -6,7 +6,7 @@ class Char:
   ataque = 1.3
   arma = ""
   defesa = 1.0
-  moedas = 6
+  moedas = 600000
   honra = 0
   option = 0
   deadEnemy = False

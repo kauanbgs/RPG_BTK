@@ -4,19 +4,21 @@ from areas.areas import areas
 from player.status import Char
 from resources.menu import menu
 from historia.histVardann import patrulhaVardann
+from assets.data import printDigitado
+from assets.config import config
 
 def postoVardannIntro():
   Char.veioVardann = True
   os.system('cls')
-  print("Após ter se destacado em Winterfell, Aton é convidado para escoltar uma caravana de suprimentos até o posto avançado de Vardann.")
+  printDigitado("Após ter se destacado em Winterfell, Aton é convidado para escoltar uma caravana de suprimentos até o posto avançado de Vardann.\n", config.tempo)
   time.sleep(4)
-  print("Vardann é uma ilha montanhosa, isolada e estratégica, porém constantemente ameaçada por bandidos e mercenários...")
+  printDigitado("Vardann é uma ilha montanhosa, isolada e estratégica, porém constantemente ameaçada por bandidos e mercenários...\n", config.tempo)
   time.sleep(4)
-  print("Após uma longa viagem escoltando a caravana, Aton avista o topo das muralhas de Várdann.")
+  printDigitado("Após uma longa viagem escoltando a caravana, Aton avista o topo das muralhas de Várdann.\n", config.tempo)
   time.sleep(4)
-  print("Soldados exaustos, trilhas perigosas e o som do vento cortando as pedras anunciam a chegada.")
+  printDigitado("Soldados exaustos, trilhas perigosas e o som do vento cortando as pedras anunciam a chegada.\n", config.tempo)
   time.sleep(4)
-  print("Um capitão se aproxima e diz: Precisamos de toda ajuda possível por aqui.")
+  printDigitado("Um capitão se aproxima e diz: Precisamos de toda ajuda possível por aqui.\n", config.tempo)
   time.sleep(5)
   os.system('cls') 
 

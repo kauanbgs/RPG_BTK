@@ -9,8 +9,8 @@ def apostaDados():
   print("Você irá jogar uma rodada de aposta de dados!\nAs regras são as seguintes: Voce irá rolar um dado de 20 lados, se cair mais ou igual a 10 suas moedas se multiplicam em 1.5, se cair menos você perde todas as moedas apostadas.")
   aposta = int(input("Quanto quer apostar: "))
   if aposta == 0:
-    from areas.bosque_terrivel import bosqueTerrivel
-    bosqueTerrivel()
+    from areas.bosque_terrivel2 import bosqueTerrivel2
+    bosqueTerrivel2()
   elif aposta > Char.moedas:
     print("Você não tem moedas suficientes para apostar isso!")
     time.sleep(2)

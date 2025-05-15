@@ -3,6 +3,7 @@ import os
 import time
 from assets.data import limpar_tela
 
+
 def areas():
   from areas.bosque_terrivel import bosqueTerrivel
   from areas.bosque_terrivel2 import bosqueTerrivel2
@@ -13,8 +14,8 @@ def areas():
   from resources.menu import menu
   limpar_tela()
   Char.where = "Centro da Cidade"
-  print(f"Você está atualmente no: {Char.where}")
-  print("Você pode ir para:")
+  print(f"Você está atualmente no: {Char.where}\n")
+  print("Você pode ir para: \n")
   print("[0] - Voltar ao menu")
   print("[1] - Bosque Terrível")
   if Char.veioFazenda == True:
